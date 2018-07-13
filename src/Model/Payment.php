@@ -84,7 +84,7 @@ class Payment
         $this->setValue('description', $description);
     }
 
-    public function getClientEmail() : string
+    public function getClientEmail() : ?string
     {
         return $this->getValue('clientEmail');
     }
