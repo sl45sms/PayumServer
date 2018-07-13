@@ -4,7 +4,7 @@ MAINTAINER Maksym Kotliar <kotlyar.maksim@gmail.com>
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends --no-install-suggests openssl pkg-config libssl-dev libsslcommon2-dev && \
-    apt-get install -y --no-install-recommends --no-install-suggests php7.1-mongodb php7.1-soap php7.1-xml && \
+    apt-get install -y --no-install-recommends --no-install-suggests php7.2-mongodb php7.2-soap php7.2-xml && \
     rm -rf /var/lib/apt/lists/*
 
 ENV PAYUM_DEBUG 0
