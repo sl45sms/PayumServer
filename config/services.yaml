@@ -216,3 +216,9 @@ services:
             - '@app.gateway_choices_array'
         tags:
             - { name: form.type }
+
+    app.payum.alphabank.factory:
+        class: Payum\Core\Bridge\Symfony\Builder\GatewayFactoryBuilder
+        arguments: [Dnna\Payum\AlphaBank\AlphaBankGatewayFactory]
+        tags:
+            - { name: payum.gateway_factory_builder, factory: alphabank }

@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d5d94059c93ed89cdcdfab5128afc1aa",
+    "content-hash": "7d49703b67ea7ead335fd2a0be841a25",
     "packages": [
         {
             "name": "authorizenet/authorizenet",
@@ -166,6 +166,51 @@
                 "symmetric key cryptography"
             ],
             "time": "2017-05-18T21:28:48+00:00"
+        },
+        {
+            "name": "dnna/payum-alphabank",
+            "version": "0.5",
+            "target-dir": "Dnna/Payum/AlphaBank",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dnna/payum-alphabank.git",
+                "reference": "622c0ae610fd788a0db5949dbc480cfa4de58ef3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dnna/payum-alphabank/zipball/622c0ae610fd788a0db5949dbc480cfa4de58ef3",
+                "reference": "622c0ae610fd788a0db5949dbc480cfa4de58ef3",
+                "shasum": ""
+            },
+            "require": {
+                "payum/core": "^1.5"
+            },
+            "require-dev": {
+                "payum/core": "^1.5@dev",
+                "php-http/guzzle6-adapter": "^1.0"
+            },
+            "type": "project",
+            "autoload": {
+                "psr-0": {
+                    "Dnna\\Payum\\AlphaBank": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dimosthenis Nikoudis",
+                    "email": "dnna@dnna.gr"
+                }
+            ],
+            "description": "Payum Alpha Bank gateway",
+            "homepage": "https://payum.forma-pro.com",
+            "keywords": [
+                "payment"
+            ],
+            "time": "2018-07-06T14:17:25+00:00"
         },
         {
             "name": "doctrine/annotations",

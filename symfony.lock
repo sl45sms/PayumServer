@@ -11,6 +11,9 @@
     "defuse/php-encryption": {
         "version": "v2.1.0"
     },
+    "dnna/payum-alphabank": {
+        "version": "0.5"
+    },
     "doctrine/annotations": {
         "version": "1.0",
         "recipe": {

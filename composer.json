@@ -27,6 +27,7 @@
         "ext-iconv": "*",
         "authorizenet/authorizenet": "^1.9",
         "defuse/php-encryption": "^2.1",
+        "dnna/payum-alphabank": "^0.5.0",
         "fp/klarna-invoice": "^0.1.2",
         "klarna/checkout": "^4.0",
         "makasim/yadm-bundle": "^0.2.1",
