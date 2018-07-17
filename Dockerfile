@@ -64,4 +64,4 @@ WORKDIR /payum
 
 RUN ./update-psl-icann-section
 
-CMD ["/entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
