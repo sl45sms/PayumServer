@@ -33,19 +33,27 @@ http {
         listen 80  default_server;
         root $NGINX_WEB_ROOT;
 
+
+    # CORS support
+    more_set_headers 'Access-Control-Allow-Origin: $http_origin';
+    more_set_headers 'Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE, HEAD';
+    more_set_headers 'Access-Control-Allow-Credentials: true';
+    more_set_headers 'Access-Control-Allow-Headers: Origin,Content-Type,Accept,Authorization';
+
+
+
+
         location / {
-     
-         if ($request_method = 'OPTIONS') {
-            more_set_headers 'Access-Control-Allow-Origin: $http_origin';
-            more_set_headers 'Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE, HEAD';
+
+     if ($request_method = 'OPTIONS') {
             more_set_headers 'Access-Control-Max-Age: 1728000';
-            more_set_headers 'Access-Control-Allow-Credentials: true';
-            more_set_headers 'Access-Control-Allow-Headers: Origin,Content-Type,Accept,Authorization';
             more_set_headers 'Content-Type: text/plain; charset=UTF-8';
             more_set_headers 'Content-Length: 0';
             return 204;
-          }
-            
+       }
+
+
+
             try_files $uri $NGINX_PHP_FALLBACK$is_args$args;
         }
         location ~ $NGINX_PHP_LOCATION {
