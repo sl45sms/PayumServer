@@ -1,4 +1,5 @@
 .idea
+trash
 
 ###> symfony/framework-bundle ###
 .env
