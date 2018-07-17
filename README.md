@@ -1,3 +1,14 @@
+# Payum Latest server prepared for greek bank AlphaBank
+injects the payment gateway from [dnna/payum-alphabank](https://github.com/dnna/payum-alphabank)
+
+and modify example demo.html to show complete usage.
+
+also some bug fixes for PayumServer.
+
+
+original readme folowing:
+
+
 # PayumServer.
 [![Join the chat at https://gitter.im/Payum/Payum](https://badges.gitter.im/Payum/Payum.svg)](https://gitter.im/Payum/Payum?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/Payum/PayumServer.png?branch=master)](https://travis-ci.org/Payum/PayumServer)
