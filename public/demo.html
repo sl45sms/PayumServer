@@ -33,8 +33,20 @@
                 const paymentId = (new URL(window.location.href)).searchParams.get("paymentId");
 
                 document.querySelector('#pay-btn').addEventListener('click', () => {
-                    const payment = {totalAmountInput: 1, currencyCode: 'EUR', gatewayName: 'AlphaBankSandbox', email:"someone@example.com"};
-                                             
+                     const payment = {totalAmountInput: 0.5, currencyCode: 'EUR', gatewayName: 'AlphaBankSandbox', 
+                           description: "try to use sandbox of alphabank",
+                           payer:{
+                           email: "someone@example.com",
+                           id: "cust1",
+                           firstName: "somename"
+                           },
+                           details:{
+                            // sharedSecretKey: "Cardlink1", // do not actual put this here! use backend configuration 
+                            //mid: "someothermid",
+                            anykeyyouwont: "withanyvalueyouwant"
+                          }
+                       };
+
 
                     payum.payment.create(payment, (payment) => {
                         const token = {
